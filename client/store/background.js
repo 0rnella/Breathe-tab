@@ -12,15 +12,6 @@ const initialBackground = {
   imageUrl: 'forest_lake.jpg'
 }
 
-// export const fetchBackground = (backgroundName) => async dispatch => {
-//     try {
-//         const res = axios.get(`/public/${backgroundName.split(' ').join('_')}`)
-//         dispatch(setBackground(res.data))
-//     } catch (error) {
-//         console.error(error)
-//     }
-// }
-
 export default function(state = initialBackground, action) {
   switch (action.type) {
     case SET_BACKGROUND:
